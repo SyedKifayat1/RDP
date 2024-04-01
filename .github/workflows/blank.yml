@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Download
-      run: Invoke-WebRequest https://drive.usercontent.google.com/download?id=18XP2MEJCKA-Y-wonEKs4xkLwDHOa0knJ&export=download&authuser=0 -OutFile ngrok.zip
+      run: Invoke-WebRequest https://drive.usercontent.google.com/download?id=18XP2MEJCKA-Y-wonEKs4xkLwDHOa0knJ&export=download -OutFile ngrok.zip
     - name: Extract
       run: Expand-Archive ngrok.zip
     - name: Auth
